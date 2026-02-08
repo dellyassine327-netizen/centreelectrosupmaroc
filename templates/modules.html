@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>Modules</h1>
+<p>Choisissez un module :</p>
+
+<div class="grid">
+  {% for slug, m in modules.items() %}
+    <div class="card">
+      <h2>{{ m.nom }}</h2>
+      <p>{{ m.description }}</p>
+      <a class="btn" href="/module/{{ slug }}">Ouvrir</a>
+    </div>
+  {% endfor %}
+</div>
+
+{% endblock %}

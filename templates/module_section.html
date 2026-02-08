@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>{{ module.nom }} — {{ section_label }}</h1>
+
+<a class="link" href="/module/{{ slug }}">⬅ Retour au module</a>
+
+<hr>
+
+{% if pdfs|length == 0 %}
+  <p><em>Aucun document pour le moment.</em></p>
+{% else %}
+  <ul class="list">
+    {% for f in pdfs %}
+      <li>
+        <a class="link" href="{{ url_for('static', filename=base_url ~ '/' ~ f) }}" target="_blank">
+          📄 {{ f }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}
+
+{% endblock %}

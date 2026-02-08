@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>À propos</h1>
+
+<section class="about-card">
+  <h2>Centre ElectroSup Maroc</h2>
+  <p>
+    Plateforme éducative dédiée au <strong>Génie Électrique</strong>.
+  </p>
+</section>
+
+<section class="about-card">
+  <h2>Présentation</h2>
+  <p>
+    Je suis <strong>Ing. Prof. Yassine Islah</strong>, ingénieur en génie électrique et enseignant.
+    J’ai créé ce site pour accompagner les étudiants dans leur parcours universitaire, en particulier
+    ceux de la <strong>FST Tanger</strong> et des filières scientifiques et techniques.
+  </p>
+</section>
+
+<section class="about-card">
+  <h2>Objectif du site</h2>
+  <p>
+    L’objectif principal de cette plateforme est de proposer des ressources pédagogiques
+    <strong>claires</strong>, <strong>organisées</strong> et <strong>accessibles</strong>, afin de faciliter :
+  </p>
+  <ul class="list">
+    <li>Le soutien et la compréhension des cours</li>
+    <li>L’entraînement avec des travaux dirigés (TD)</li>
+    <li>La préparation aux concours des grandes écoles d’ingénieurs</li>
+  </ul>
+</section>
+
+<section class="about-card">
+  <h2>Ce que vous trouverez sur le site</h2>
+  <p>
+    Chaque module contient une organisation simple et pratique :
+  </p>
+  <ul class="list">
+    <li><strong>Cours</strong> : résumés, chapitres, fiches</li>
+    <li><strong>Travaux dirigés (TD)</strong> : exercices et corrigés</li>
+    <li>
+      <strong>Examens</strong> : anciens examens + solutions (si disponibles),
+      ainsi que des <strong>anciens concours</strong> des grandes écoles d’ingénieurs
+    </li>
+  </ul>
+</section>
+
+<section class="about-card">
+  <h2>À qui s’adresse ce site ?</h2>
+  <p>
+    Ce site s’adresse principalement aux étudiants de l’enseignement supérieur en génie électrique,
+    souhaitant renforcer leurs connaissances, améliorer leur niveau et se préparer efficacement aux examens.
+  </p>
+  <p>
+    Il est également utile pour les étudiants qui préparent des concours d’accès aux grandes écoles
+    d’ingénieurs, en particulier dans les domaines liés à l’électrotechnique, l’électronique et les circuits.
+  </p>
+</section>
+
+<section class="about-card">
+  <h2>Modules disponibles sur le site</h2>
+  <ul class="list">
+    <li>Circuit électrique</li>
+    <li>Électronique analogique</li>
+    <li>Électrotechnique</li>
+    <li>Préparation aux concours des grandes écoles d’ingénieurs</li>
+  </ul>
+</section>
+
+<section class="about-card">
+  <h2>Contact</h2>
+  <p>
+    Pour toute question, demande de cours de soutien ou collaboration,
+    vous pouvez me contacter via la page <a class="link" href="{{ url_for('contact') }}">Contact</a>.
+  </p>
+</section>
+
+{% endblock %}
