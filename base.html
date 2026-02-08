@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ElectroSupMaroc</title>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+  <!-- Symboles animés (fond) -->
+  <div class="elec-bg">
+    <span style="left:8%;  animation-duration:18s; animation-delay:0s;">⚡</span>
+    <span style="left:18%; animation-duration:22s; animation-delay:2s;">🔌</span>
+    <span style="left:32%; animation-duration:20s; animation-delay:6s;">📡</span>
+    <span style="left:45%; animation-duration:24s; animation-delay:1s;">⏚</span>
+    <span style="left:58%; animation-duration:19s; animation-delay:4s;">∿</span>
+    <span style="left:70%; animation-duration:23s; animation-delay:7s;">Ω</span>
+    <span style="left:82%; animation-duration:21s; animation-delay:3s;">⎓</span>
+    <span style="left:92%; animation-duration:25s; animation-delay:5s;">⚙️</span>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="brand">
+  <h2 class="logo">Centre ElectroSup Maroc</h2>
+  <p class="owner">Ing. Prof : Islah Yassine</p>
+</div>
+
+      <nav class="nav">
+        <a href="{{ url_for('index') }}">Accueil</a>
+        <a href="{{ url_for('modules') }}">Modules</a>
+        <a href="{{ url_for('apropos') }}">À propos</a>
+        <a href="{{ url_for('contact') }}">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="container main">
+    {% block content %}{% endblock %}
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 — Centre ElectroSup Maroc — Ing. Prof. Yassine Islah</p>
+    </div>
+  </footer>
+
+</body>
+</html>

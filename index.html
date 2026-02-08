@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>Centre ElectroSup Maroc</h1>
+<p style="margin-top:6px; font-weight:700; color: rgba(233,238,252,0.85);">
+  Ing. Prof : Islah Yassine
+</p>
+
+<p>Cours, TD et Examens en Circuit électrique, Électronique analogique et Électrotechnique.</p>
+
+<div class="grid">
+  <div class="card">
+    <h2>📚 Cours</h2>
+    <p>PDF classés par module.</p>
+  </div>
+  <div class="card">
+    <h2>📝 TD</h2>
+    <p>Exercices pour s’entraîner.</p>
+  </div>
+  <div class="card">
+    <h2>🎯 Examens</h2>
+    <p>Sujets pour se préparer.</p>
+  </div>
+</div>
+
+<a class="btn" href="{{ url_for('modules') }}">Accéder aux modules</a>
+
+{% endblock %}

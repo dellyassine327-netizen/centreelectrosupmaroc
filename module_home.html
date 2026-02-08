@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>{{ module.nom }}</h1>
+<p>{{ module.description }}</p>
+
+<div class="grid">
+  {% for key, label in sections %}
+    <a class="folder" href="/module/{{ slug }}/{{ key }}">
+      📁 <strong>{{ label }}</strong>
+      <span>Ouvrir les documents</span>
+    </a>
+  {% endfor %}
+</div>
+
+<br>
+<a class="link" href="{{ url_for('modules') }}">⬅ Retour aux modules</a>
+
+{% endblock %}
